@@ -15,7 +15,7 @@ int main(void)
     ucg_SetFont(&ucg, ucg_font_courB08_tf);
     ucg_SetColor(&ucg, 0, 0, 255, 0);
     ucg_SetRotate180(&ucg);
-    ucg_DrawString (&ucg, 64, 71, 0, "Nhom4_TTCS");
+    ucg_DrawString (&ucg, 64, 64, 0, "Nhom4_TTCS");
 
     while(1)
     {

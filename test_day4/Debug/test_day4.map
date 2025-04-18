@@ -29,7 +29,7 @@ C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel.o)
                               ./Src/main.o (ucg_SetColor)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
-                              ./Src/main.o (ucg_font_ncenR12_hr)
+                              ./Src/main.o (ucg_font_courB08_tf)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
                               ./Src/main.o (ucg_SetRotate180)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
@@ -1058,8 +1058,6 @@ Discarded input sections
                 0x0000000000000000      0xacb C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB08_mr
                 0x0000000000000000      0x4da C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
- .rodata.ucg_font_courB08_tf
-                0x0000000000000000      0x877 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB08_tr
                 0x0000000000000000      0x3da C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB10_mf
@@ -1390,6 +1388,8 @@ Discarded input sections
                 0x0000000000000000      0x629 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_ncenR12_hf
                 0x0000000000000000     0x1093 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
+ .rodata.ucg_font_ncenR12_hr
+                0x0000000000000000      0x7a8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_ncenR12_tf
                 0x0000000000000000      0xea4 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_ncenR12_tr
@@ -2175,442 +2175,444 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000194                . = ALIGN (0x4)
 
-.text           0x0000000008000194     0x3030
+.text           0x0000000008000194     0x300c
                 0x0000000008000194                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000194       0x40 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.text*)
- .text.main     0x00000000080001d4       0x80 ./Src/main.o
+ .text.main     0x00000000080001d4       0x5c ./Src/main.o
                 0x00000000080001d4                main
  .text.Reset_Handler
-                0x0000000008000254       0x50 ./Startup/startup_stm32f401retx.o
-                0x0000000008000254                Reset_Handler
+                0x0000000008000230       0x50 ./Startup/startup_stm32f401retx.o
+                0x0000000008000230                Reset_Handler
  .text.Default_Handler
-                0x00000000080002a4        0x2 ./Startup/startup_stm32f401retx.o
-                0x00000000080002a4                EXTI2_IRQHandler
-                0x00000000080002a4                DebugMon_Handler
-                0x00000000080002a4                SPI4_IRQHandler
-                0x00000000080002a4                TIM1_CC_IRQHandler
-                0x00000000080002a4                HardFault_Handler
-                0x00000000080002a4                SDIO_IRQHandler
-                0x00000000080002a4                TAMP_STAMP_IRQHandler
-                0x00000000080002a4                PendSV_Handler
-                0x00000000080002a4                NMI_Handler
-                0x00000000080002a4                EXTI3_IRQHandler
-                0x00000000080002a4                TIM1_UP_TIM10_IRQHandler
-                0x00000000080002a4                I2C3_ER_IRQHandler
-                0x00000000080002a4                EXTI18_OTG_FS_WKUP_IRQHandler
-                0x00000000080002a4                EXTI0_IRQHandler
-                0x00000000080002a4                I2C2_EV_IRQHandler
-                0x00000000080002a4                FPU_IRQHandler
-                0x00000000080002a4                UsageFault_Handler
-                0x00000000080002a4                SPI1_IRQHandler
-                0x00000000080002a4                TIM1_BRK_TIM9_IRQHandler
-                0x00000000080002a4                USART6_IRQHandler
-                0x00000000080002a4                TIM4_IRQHandler
-                0x00000000080002a4                I2C1_EV_IRQHandler
-                0x00000000080002a4                TIM3_IRQHandler
-                0x00000000080002a4                RCC_IRQHandler
-                0x00000000080002a4                Default_Handler
-                0x00000000080002a4                EXTI15_10_IRQHandler
-                0x00000000080002a4                ADC_IRQHandler
-                0x00000000080002a4                TIM5_IRQHandler
-                0x00000000080002a4                I2C3_EV_IRQHandler
-                0x00000000080002a4                EXTI9_5_IRQHandler
-                0x00000000080002a4                SPI2_IRQHandler
-                0x00000000080002a4                MemManage_Handler
-                0x00000000080002a4                SVC_Handler
-                0x00000000080002a4                EXTI4_IRQHandler
-                0x00000000080002a4                EXTI22_RTC_WKUP_IRQHandler
-                0x00000000080002a4                TIM2_IRQHandler
-                0x00000000080002a4                EXTI16_PVD_IRQHandler
-                0x00000000080002a4                TIM1_TRG_COM_TIM11_IRQHandler
-                0x00000000080002a4                EXTI1_IRQHandler
-                0x00000000080002a4                EXTI17_RTC_Alarm_IRQHandler
-                0x00000000080002a4                USART2_IRQHandler
-                0x00000000080002a4                I2C2_ER_IRQHandler
-                0x00000000080002a4                FLASH_IRQHandler
-                0x00000000080002a4                BusFault_Handler
-                0x00000000080002a4                USART1_IRQHandler
-                0x00000000080002a4                OTG_FS_IRQHandler
-                0x00000000080002a4                SPI3_IRQHandler
-                0x00000000080002a4                I2C1_ER_IRQHandler
- *fill*         0x00000000080002a6        0x2 
+                0x0000000008000280        0x2 ./Startup/startup_stm32f401retx.o
+                0x0000000008000280                EXTI2_IRQHandler
+                0x0000000008000280                DebugMon_Handler
+                0x0000000008000280                SPI4_IRQHandler
+                0x0000000008000280                TIM1_CC_IRQHandler
+                0x0000000008000280                HardFault_Handler
+                0x0000000008000280                SDIO_IRQHandler
+                0x0000000008000280                TAMP_STAMP_IRQHandler
+                0x0000000008000280                PendSV_Handler
+                0x0000000008000280                NMI_Handler
+                0x0000000008000280                EXTI3_IRQHandler
+                0x0000000008000280                TIM1_UP_TIM10_IRQHandler
+                0x0000000008000280                I2C3_ER_IRQHandler
+                0x0000000008000280                EXTI18_OTG_FS_WKUP_IRQHandler
+                0x0000000008000280                EXTI0_IRQHandler
+                0x0000000008000280                I2C2_EV_IRQHandler
+                0x0000000008000280                FPU_IRQHandler
+                0x0000000008000280                UsageFault_Handler
+                0x0000000008000280                SPI1_IRQHandler
+                0x0000000008000280                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008000280                USART6_IRQHandler
+                0x0000000008000280                TIM4_IRQHandler
+                0x0000000008000280                I2C1_EV_IRQHandler
+                0x0000000008000280                TIM3_IRQHandler
+                0x0000000008000280                RCC_IRQHandler
+                0x0000000008000280                Default_Handler
+                0x0000000008000280                EXTI15_10_IRQHandler
+                0x0000000008000280                ADC_IRQHandler
+                0x0000000008000280                TIM5_IRQHandler
+                0x0000000008000280                I2C3_EV_IRQHandler
+                0x0000000008000280                EXTI9_5_IRQHandler
+                0x0000000008000280                SPI2_IRQHandler
+                0x0000000008000280                MemManage_Handler
+                0x0000000008000280                SVC_Handler
+                0x0000000008000280                EXTI4_IRQHandler
+                0x0000000008000280                EXTI22_RTC_WKUP_IRQHandler
+                0x0000000008000280                TIM2_IRQHandler
+                0x0000000008000280                EXTI16_PVD_IRQHandler
+                0x0000000008000280                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008000280                EXTI1_IRQHandler
+                0x0000000008000280                EXTI17_RTC_Alarm_IRQHandler
+                0x0000000008000280                USART2_IRQHandler
+                0x0000000008000280                I2C2_ER_IRQHandler
+                0x0000000008000280                FLASH_IRQHandler
+                0x0000000008000280                BusFault_Handler
+                0x0000000008000280                USART1_IRQHandler
+                0x0000000008000280                OTG_FS_IRQHandler
+                0x0000000008000280                SPI3_IRQHandler
+                0x0000000008000280                I2C1_ER_IRQHandler
+ *fill*         0x0000000008000282        0x2 
  .text.SystemInit
-                0x00000000080002a8       0x6c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
-                0x00000000080002a8                SystemInit
+                0x0000000008000284       0x6c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
+                0x0000000008000284                SystemInit
  .text.SystemCoreClockUpdate
-                0x0000000008000314       0xf8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
-                0x0000000008000314                SystemCoreClockUpdate
+                0x00000000080002f0       0xf8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
+                0x00000000080002f0                SystemCoreClockUpdate
  .text.SetSysClock
-                0x000000000800040c       0xa0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
+                0x00000000080003e8       0xa0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
  .text.NVIC_SetPriority
-                0x00000000080004ac       0x54 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x0000000008000488       0x54 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
  .text.SysTick_Config
-                0x0000000008000500       0x44 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x00000000080004dc       0x44 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
  .text.TimerInit
-                0x0000000008000544       0x44 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
-                0x0000000008000544                TimerInit
+                0x0000000008000520       0x44 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x0000000008000520                TimerInit
  .text.TimerStart
-                0x0000000008000588       0xc4 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
-                0x0000000008000588                TimerStart
+                0x0000000008000564       0xc4 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x0000000008000564                TimerStart
  .text.TimerStop
-                0x000000000800064c       0xa0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
-                0x000000000800064c                TimerStop
+                0x0000000008000628       0xa0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x0000000008000628                TimerStop
  .text.GetMilSecTick
-                0x00000000080006ec       0x18 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
-                0x00000000080006ec                GetMilSecTick
+                0x00000000080006c8       0x18 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x00000000080006c8                GetMilSecTick
  .text.processTimerScheduler
-                0x0000000008000704       0xf0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
-                0x0000000008000704                processTimerScheduler
+                0x00000000080006e0       0xf0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x00000000080006e0                processTimerScheduler
  .text.TimeExpired
-                0x00000000080007f4       0xcc C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x00000000080007d0       0xcc C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
  .text.SysTick_Handler
-                0x00000000080008c0       0x1c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
-                0x00000000080008c0                SysTick_Handler
+                0x000000000800089c       0x1c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+                0x000000000800089c                SysTick_Handler
  .text.delayMicroseconds
-                0x00000000080008dc       0x14 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
+                0x00000000080008b8       0x14 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
  .text.ucg_gpio_init
-                0x00000000080008f0       0x60 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
+                0x00000000080008cc       0x60 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
  .text.ucg_com_arduino_send_generic_SW_SPI
-                0x0000000008000950       0x74 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
+                0x000000000800092c       0x74 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
  .text.ucg_com_arduino_generic_SW_SPI
-                0x00000000080009c4      0x1ec C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
+                0x00000000080009a0      0x1ec C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
  .text.Ucglib4WireSWSPI_begin
-                0x0000000008000bb0       0x38 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
-                0x0000000008000bb0                Ucglib4WireSWSPI_begin
+                0x0000000008000b8c       0x38 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
+                0x0000000008000b8c                Ucglib4WireSWSPI_begin
  .text.ucg_DrawBox
-                0x0000000008000be8       0x56 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_box.o)
-                0x0000000008000be8                ucg_DrawBox
+                0x0000000008000bc4       0x56 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_box.o)
+                0x0000000008000bc4                ucg_DrawBox
  .text.ucg_ClearScreen
-                0x0000000008000c3e       0x50 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_box.o)
-                0x0000000008000c3e                ucg_ClearScreen
+                0x0000000008000c1a       0x50 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_box.o)
+                0x0000000008000c1a                ucg_ClearScreen
  .text.ucg_ccs_init
-                0x0000000008000c8e       0xc0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
-                0x0000000008000c8e                ucg_ccs_init
+                0x0000000008000c6a       0xc0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
+                0x0000000008000c6a                ucg_ccs_init
  .text.ucg_ccs_step
-                0x0000000008000d4e       0x80 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
-                0x0000000008000d4e                ucg_ccs_step
+                0x0000000008000d2a       0x80 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
+                0x0000000008000d2a                ucg_ccs_step
  .text.ucg_ccs_seek
-                0x0000000008000dce       0xca C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
-                0x0000000008000dce                ucg_ccs_seek
+                0x0000000008000daa       0xca C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
+                0x0000000008000daa                ucg_ccs_seek
  .text.ucg_dev_default_cb
-                0x0000000008000e98       0x44 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_default_cb.o)
-                0x0000000008000e98                ucg_dev_default_cb
+                0x0000000008000e74       0x44 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_default_cb.o)
+                0x0000000008000e74                ucg_dev_default_cb
  .text.ucg_ext_none
-                0x0000000008000edc       0x1c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_default_cb.o)
-                0x0000000008000edc                ucg_ext_none
+                0x0000000008000eb8       0x1c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_default_cb.o)
+                0x0000000008000eb8                ucg_ext_none
  .text.ucg_handle_st7735_l90fx
-                0x0000000008000ef8       0xd8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x0000000008000ef8                ucg_handle_st7735_l90fx
+                0x0000000008000ed4       0xd8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0000000008000ed4                ucg_handle_st7735_l90fx
  .text.ucg_handle_st7735_l90se
-                0x0000000008000fd0      0x154 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x0000000008000fd0                ucg_handle_st7735_l90se
+                0x0000000008000fac      0x154 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0000000008000fac                ucg_handle_st7735_l90se
  .text.ucg_dev_ic_st7735_18
-                0x0000000008001124       0xf8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x0000000008001124                ucg_dev_ic_st7735_18
+                0x0000000008001100       0xf8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0000000008001100                ucg_dev_ic_st7735_18
  .text.ucg_ext_st7735_18
-                0x000000000800121c       0x28 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x000000000800121c                ucg_ext_st7735_18
+                0x00000000080011f8       0x28 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x00000000080011f8                ucg_ext_st7735_18
  .text.ucg_PowerDown
-                0x0000000008001244       0x34 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
-                0x0000000008001244                ucg_PowerDown
+                0x0000000008001220       0x34 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+                0x0000000008001220                ucg_PowerDown
  .text.ucg_PowerUp
-                0x0000000008001278       0x3c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
-                0x0000000008001278                ucg_PowerUp
+                0x0000000008001254       0x3c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+                0x0000000008001254                ucg_PowerUp
  .text.ucg_SetClipBox
-                0x00000000080012b4       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
-                0x00000000080012b4                ucg_SetClipBox
+                0x0000000008001290       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+                0x0000000008001290                ucg_SetClipBox
  .text.ucg_SetMaxClipRange
-                0x00000000080012d2       0x30 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
-                0x00000000080012d2                ucg_SetMaxClipRange
+                0x00000000080012ae       0x30 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+                0x00000000080012ae                ucg_SetMaxClipRange
  .text.ucg_GetDimension
-                0x0000000008001302       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
-                0x0000000008001302                ucg_GetDimension
+                0x00000000080012de       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+                0x00000000080012de                ucg_GetDimension
  .text.ucg_DrawL90FXWithArg
-                0x0000000008001326       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
-                0x0000000008001326                ucg_DrawL90FXWithArg
+                0x0000000008001302       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+                0x0000000008001302                ucg_DrawL90FXWithArg
  .text.ucg_dev_st7735_18x128x128
-                0x0000000008001344       0x80 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
-                0x0000000008001344                ucg_dev_st7735_18x128x128
+                0x0000000008001320       0x80 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+                0x0000000008001320                ucg_dev_st7735_18x128x128
  .text.ucg_font_get_byte
-                0x00000000080013c4       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x00000000080013a0       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
  .text.ucg_font_get_word
-                0x00000000080013e8       0x40 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x00000000080013c4       0x40 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
  .text.ucg_read_font_info
-                0x0000000008001428      0x142 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001428                ucg_read_font_info
+                0x0000000008001404      0x142 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001404                ucg_read_font_info
  .text.ucg_font_decode_get_unsigned_bits
-                0x000000000800156a       0x96 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x000000000800156a                ucg_font_decode_get_unsigned_bits
+                0x0000000008001546       0x96 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001546                ucg_font_decode_get_unsigned_bits
  .text.ucg_font_decode_get_signed_bits
-                0x0000000008001600       0x46 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001600                ucg_font_decode_get_signed_bits
+                0x00000000080015dc       0x46 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x00000000080015dc                ucg_font_decode_get_signed_bits
  .text.ucg_add_vector_y
-                0x0000000008001646       0x7a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001622       0x7a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
  .text.ucg_add_vector_x
-                0x00000000080016c0       0x7a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x000000000800169c       0x7a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
  .text.ucg_font_decode_len
-                0x000000000800173a      0x118 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x000000000800173a                ucg_font_decode_len
+                0x0000000008001716      0x118 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001716                ucg_font_decode_len
  .text.ucg_font_setup_decode
-                0x0000000008001852       0x64 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x000000000800182e       0x64 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
  .text.ucg_font_decode_glyph
-                0x00000000080018b6      0x14c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x00000000080018b6                ucg_font_decode_glyph
+                0x0000000008001892      0x14c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001892                ucg_font_decode_glyph
  .text.ucg_font_get_glyph_data
-                0x0000000008001a02       0x7a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001a02                ucg_font_get_glyph_data
+                0x00000000080019de       0x7a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x00000000080019de                ucg_font_get_glyph_data
  .text.ucg_font_draw_glyph
-                0x0000000008001a7c       0x62 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001a7c                ucg_font_draw_glyph
+                0x0000000008001a58       0x62 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001a58                ucg_font_draw_glyph
  .text.ucg_SetFontMode
-                0x0000000008001ade       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001ade                ucg_SetFontMode
- *fill*         0x0000000008001afe        0x2 
+                0x0000000008001aba       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001aba                ucg_SetFontMode
+ *fill*         0x0000000008001ada        0x2 
  .text.ucg_DrawGlyph
-                0x0000000008001b00       0xb0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001b00                ucg_DrawGlyph
+                0x0000000008001adc       0xb0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001adc                ucg_DrawGlyph
  .text.task_drawString
-                0x0000000008001bb0      0x138 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001bb0                task_drawString
+                0x0000000008001b8c      0x138 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001b8c                task_drawString
  .text.ucg_DrawString
-                0x0000000008001ce8       0x78 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001ce8                ucg_DrawString
+                0x0000000008001cc4       0x78 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001cc4                ucg_DrawString
  .text.ucg_UpdateRefHeight
-                0x0000000008001d60       0xd8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001d60                ucg_UpdateRefHeight
+                0x0000000008001d3c       0xd8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001d3c                ucg_UpdateRefHeight
  .text.ucg_font_calc_vref_font
-                0x0000000008001e38       0x16 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001e38                ucg_font_calc_vref_font
- *fill*         0x0000000008001e4e        0x2 
+                0x0000000008001e14       0x16 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001e14                ucg_font_calc_vref_font
+ *fill*         0x0000000008001e2a        0x2 
  .text.ucg_SetFontPosBaseline
-                0x0000000008001e50       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001e50                ucg_SetFontPosBaseline
+                0x0000000008001e2c       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001e2c                ucg_SetFontPosBaseline
  .text.ucg_SetFont
-                0x0000000008001e70       0x4c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
-                0x0000000008001e70                ucg_SetFont
+                0x0000000008001e4c       0x4c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+                0x0000000008001e4c                ucg_SetFont
  .text.ucg_init_struct
-                0x0000000008001ebc       0x50 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_init.o)
-                0x0000000008001ebc                ucg_init_struct
+                0x0000000008001e98       0x50 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_init.o)
+                0x0000000008001e98                ucg_init_struct
  .text.ucg_Init
-                0x0000000008001f0c       0x5c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_init.o)
-                0x0000000008001f0c                ucg_Init
+                0x0000000008001ee8       0x5c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_init.o)
+                0x0000000008001ee8                ucg_Init
  .text.ucg_Draw90Line
-                0x0000000008001f68       0x88 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
-                0x0000000008001f68                ucg_Draw90Line
+                0x0000000008001f44       0x88 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
+                0x0000000008001f44                ucg_Draw90Line
  .text.ucg_DrawHLine
-                0x0000000008001ff0       0x3e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
-                0x0000000008001ff0                ucg_DrawHLine
+                0x0000000008001fcc       0x3e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
+                0x0000000008001fcc                ucg_DrawHLine
  .text.ucg_SetColor
-                0x000000000800202e       0x5c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel.o)
-                0x000000000800202e                ucg_SetColor
+                0x000000000800200a       0x5c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel.o)
+                0x000000000800200a                ucg_SetColor
  .text.ucg_UndoRotate
-                0x000000000800208a       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
-                0x000000000800208a                ucg_UndoRotate
+                0x0000000008002066       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
+                0x0000000008002066                ucg_UndoRotate
  .text.ucg_rotate_180_xy
-                0x00000000080020bc       0x66 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
- *fill*         0x0000000008002122        0x2 
+                0x0000000008002098       0x66 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
+ *fill*         0x00000000080020fe        0x2 
  .text.ucg_dev_rotate180
-                0x0000000008002124      0x100 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
-                0x0000000008002124                ucg_dev_rotate180
+                0x0000000008002100      0x100 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
+                0x0000000008002100                ucg_dev_rotate180
  .text.ucg_SetRotate180
-                0x0000000008002224       0x34 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
-                0x0000000008002224                ucg_SetRotate180
- .text.bufInit  0x0000000008002258       0x36 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x0000000008002258                bufInit
+                0x0000000008002200       0x34 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
+                0x0000000008002200                ucg_SetRotate180
+ .text.bufInit  0x0000000008002234       0x36 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x0000000008002234                bufInit
  .text.bufNumItems
-                0x000000000800228e       0x18 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x000000000800228e                bufNumItems
+                0x000000000800226a       0x18 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x000000000800226a                bufNumItems
  .text.bufIsFull
-                0x00000000080022a6       0x26 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x00000000080022a6                bufIsFull
+                0x0000000008002282       0x26 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x0000000008002282                bufIsFull
  .text.bufIsEmpty
-                0x00000000080022cc       0x26 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x00000000080022cc                bufIsEmpty
+                0x00000000080022a8       0x26 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x00000000080022a8                bufIsEmpty
  .text.bufFlush
-                0x00000000080022f2       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x00000000080022f2                bufFlush
+                0x00000000080022ce       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x00000000080022ce                bufFlush
  .text.bufEnDat
-                0x0000000008002324       0x9c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x0000000008002324                bufEnDat
+                0x0000000008002300       0x9c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x0000000008002300                bufEnDat
  .text.bufDeDat
-                0x00000000080023c0       0x84 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
-                0x00000000080023c0                bufDeDat
- .text.memsetl  0x0000000008002444       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(utilities.o)
-                0x0000000008002444                memsetl
+                0x000000000800239c       0x84 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+                0x000000000800239c                bufDeDat
+ .text.memsetl  0x0000000008002420       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(utilities.o)
+                0x0000000008002420                memsetl
  .text.GPIO_Init
-                0x0000000008002476      0x11c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_gpio.o)
-                0x0000000008002476                GPIO_Init
+                0x0000000008002452      0x11c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_gpio.o)
+                0x0000000008002452                GPIO_Init
  .text.GPIO_WriteBit
-                0x0000000008002592       0x30 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_gpio.o)
-                0x0000000008002592                GPIO_WriteBit
- *fill*         0x00000000080025c2        0x2 
+                0x000000000800256e       0x30 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_gpio.o)
+                0x000000000800256e                GPIO_WriteBit
+ *fill*         0x000000000800259e        0x2 
  .text.RCC_GetClocksFreq
-                0x00000000080025c4      0x150 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_rcc.o)
-                0x00000000080025c4                RCC_GetClocksFreq
+                0x00000000080025a0      0x150 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_rcc.o)
+                0x00000000080025a0                RCC_GetClocksFreq
  .text.RCC_AHB1PeriphClockCmd
-                0x0000000008002714       0x40 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_rcc.o)
-                0x0000000008002714                RCC_AHB1PeriphClockCmd
+                0x00000000080026f0       0x40 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_rcc.o)
+                0x00000000080026f0                RCC_AHB1PeriphClockCmd
  .text.ucg_clip_is_x_visible
-                0x0000000008002754       0x4a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+                0x0000000008002730       0x4a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
  .text.ucg_clip_is_y_visible
-                0x000000000800279e       0x4a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+                0x000000000800277a       0x4a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
  .text.ucg_clip_intersection
-                0x00000000080027e8       0x74 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+                0x00000000080027c4       0x74 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
  .text.ucg_clip_is_pixel_visible
-                0x000000000800285c       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
-                0x000000000800285c                ucg_clip_is_pixel_visible
- *fill*         0x000000000800288e        0x2 
+                0x0000000008002838       0x32 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+                0x0000000008002838                ucg_clip_is_pixel_visible
+ *fill*         0x000000000800286a        0x2 
  .text.ucg_clip_l90fx
-                0x0000000008002890      0x300 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
-                0x0000000008002890                ucg_clip_l90fx
+                0x000000000800286c      0x300 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+                0x000000000800286c                ucg_clip_l90fx
  .text.ucg_clip_l90se
-                0x0000000008002b90       0x54 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
-                0x0000000008002b90                ucg_clip_l90se
+                0x0000000008002b6c       0x54 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+                0x0000000008002b6c                ucg_clip_l90se
  .text.ucg_com_PowerDown
-                0x0000000008002be4       0x3e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002be4                ucg_com_PowerDown
+                0x0000000008002bc0       0x3e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002bc0                ucg_com_PowerDown
  .text.ucg_com_PowerUp
-                0x0000000008002c22       0x60 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002c22                ucg_com_PowerUp
+                0x0000000008002bfe       0x60 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002bfe                ucg_com_PowerUp
  .text.ucg_com_SetLineStatus
-                0x0000000008002c82       0xe2 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002c82                ucg_com_SetLineStatus
+                0x0000000008002c5e       0xe2 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002c5e                ucg_com_SetLineStatus
  .text.ucg_com_SetResetLineStatus
-                0x0000000008002d64       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002d64                ucg_com_SetResetLineStatus
+                0x0000000008002d40       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002d40                ucg_com_SetResetLineStatus
  .text.ucg_com_SetCSLineStatus
-                0x0000000008002d84       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002d84                ucg_com_SetCSLineStatus
+                0x0000000008002d60       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002d60                ucg_com_SetCSLineStatus
  .text.ucg_com_SetCDLineStatus
-                0x0000000008002da4       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002da4                ucg_com_SetCDLineStatus
+                0x0000000008002d80       0x20 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002d80                ucg_com_SetCDLineStatus
  .text.ucg_com_DelayMicroseconds
-                0x0000000008002dc4       0x22 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002dc4                ucg_com_DelayMicroseconds
+                0x0000000008002da0       0x22 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002da0                ucg_com_DelayMicroseconds
  .text.ucg_com_DelayMilliseconds
-                0x0000000008002de6       0x2c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002de6                ucg_com_DelayMilliseconds
+                0x0000000008002dc2       0x2c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002dc2                ucg_com_DelayMilliseconds
  .text.ucg_com_SendByte
-                0x0000000008002e12       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002e12                ucg_com_SendByte
+                0x0000000008002dee       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002dee                ucg_com_SendByte
  .text.ucg_com_SendStringP
-                0x0000000008002e36       0x40 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002e36                ucg_com_SendStringP
+                0x0000000008002e12       0x40 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002e12                ucg_com_SendStringP
  .text.ucg_com_SendCmdArg
-                0x0000000008002e76       0x74 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
- *fill*         0x0000000008002eea        0x2 
+                0x0000000008002e52       0x74 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+ *fill*         0x0000000008002ec6        0x2 
  .text.ucg_com_SendCmdSeq
-                0x0000000008002eec      0x278 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
-                0x0000000008002eec                ucg_com_SendCmdSeq
+                0x0000000008002ec8      0x278 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+                0x0000000008002ec8                ucg_com_SendCmdSeq
  .text.__libc_init_array
-                0x0000000008003164       0x48 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
-                0x0000000008003164                __libc_init_array
+                0x0000000008003140       0x48 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+                0x0000000008003140                __libc_init_array
  *(.glue_7)
- .glue_7        0x00000000080031ac        0x0 linker stubs
+ .glue_7        0x0000000008003188        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080031ac        0x0 linker stubs
+ .glue_7t       0x0000000008003188        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x00000000080031ac        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0000000008003188        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x00000000080031ac        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x00000000080031ac                _init
- .init          0x00000000080031b0        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0000000008003188        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000008003188                _init
+ .init          0x000000000800318c        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x00000000080031b8        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x00000000080031b8                _fini
- .fini          0x00000000080031bc        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x00000000080031c4                . = ALIGN (0x4)
-                0x00000000080031c4                _etext = .
+ .fini          0x0000000008003194        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000008003194                _fini
+ .fini          0x0000000008003198        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000000080031a0                . = ALIGN (0x4)
+                0x00000000080031a0                _etext = .
 
-.vfp11_veneer   0x00000000080031c4        0x0
- .vfp11_veneer  0x00000000080031c4        0x0 linker stubs
+.vfp11_veneer   0x00000000080031a0        0x0
+ .vfp11_veneer  0x00000000080031a0        0x0 linker stubs
 
-.v4_bx          0x00000000080031c4        0x0
- .v4_bx         0x00000000080031c4        0x0 linker stubs
+.v4_bx          0x00000000080031a0        0x0
+ .v4_bx         0x00000000080031a0        0x0 linker stubs
 
-.iplt           0x00000000080031c4        0x0
- .iplt          0x00000000080031c4        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x00000000080031a0        0x0
+ .iplt          0x00000000080031a0        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x00000000080031c4      0x8b0
-                0x00000000080031c4                . = ALIGN (0x4)
+.rodata         0x00000000080031a0      0x974
+                0x00000000080031a0                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x00000000080031c4       0x18 ./Src/main.o
- .rodata        0x00000000080031dc        0xf C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+ .rodata        0x00000000080031a0        0xb ./Src/main.o
+ *fill*         0x00000000080031ab        0x1 
+ .rodata        0x00000000080031ac        0xf C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
  *(.rodata*)
- *fill*         0x00000000080031eb        0x1 
+ *fill*         0x00000000080031bb        0x1 
  .rodata.ucg_st7735_set_pos_seq
-                0x00000000080031ec       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x00000000080031ec                ucg_st7735_set_pos_seq
- *fill*         0x000000000800320a        0x2 
+                0x00000000080031bc       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x00000000080031bc                ucg_st7735_set_pos_seq
+ *fill*         0x00000000080031da        0x2 
  .rodata.ucg_st7735_set_pos_dir0_seq
-                0x000000000800320c       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x000000000800320c                ucg_st7735_set_pos_dir0_seq
- *fill*         0x000000000800322a        0x2 
+                0x00000000080031dc       0x1e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x00000000080031dc                ucg_st7735_set_pos_dir0_seq
+ *fill*         0x00000000080031fa        0x2 
  .rodata.ucg_st7735_set_pos_dir1_seq
-                0x000000000800322c       0x21 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x000000000800322c                ucg_st7735_set_pos_dir1_seq
- *fill*         0x000000000800324d        0x3 
+                0x00000000080031fc       0x21 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x00000000080031fc                ucg_st7735_set_pos_dir1_seq
+ *fill*         0x000000000800321d        0x3 
  .rodata.ucg_st7735_set_pos_dir2_seq
-                0x0000000008003250       0x21 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x0000000008003250                ucg_st7735_set_pos_dir2_seq
- *fill*         0x0000000008003271        0x3 
+                0x0000000008003220       0x21 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0000000008003220                ucg_st7735_set_pos_dir2_seq
+ *fill*         0x0000000008003241        0x3 
  .rodata.ucg_st7735_set_pos_dir3_seq
-                0x0000000008003274       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x0000000008003274                ucg_st7735_set_pos_dir3_seq
+                0x0000000008003244       0x24 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0000000008003244                ucg_st7735_set_pos_dir3_seq
  .rodata.ucg_st7735_power_down_seq
-                0x0000000008003298        0x7 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
- *fill*         0x000000000800329f        0x1 
+                0x0000000008003268        0x7 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+ *fill*         0x000000000800326f        0x1 
  .rodata.ucg_tft_128x160_st7735_init_seq
-                0x00000000080032a0       0x2c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
- .rodata.ucg_font_ncenR12_hr
-                0x00000000080032cc      0x7a8 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
-                0x00000000080032cc                ucg_font_ncenR12_hr
-                0x0000000008003a74                . = ALIGN (0x4)
+                0x0000000008003270       0x2c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+ .rodata.ucg_font_courB08_tf
+                0x000000000800329c      0x877 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
+                0x000000000800329c                ucg_font_courB08_tf
+                0x0000000008003b14                . = ALIGN (0x4)
+ *fill*         0x0000000008003b13        0x1 
 
-.rel.dyn        0x0000000008003a74        0x0
- .rel.iplt      0x0000000008003a74        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0000000008003b14        0x0
+ .rel.iplt      0x0000000008003b14        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ARM.extab      0x0000000008003a74        0x0
-                0x0000000008003a74                . = ALIGN (0x4)
+.ARM.extab      0x0000000008003b14        0x0
+                0x0000000008003b14                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008003a74                . = ALIGN (0x4)
+                0x0000000008003b14                . = ALIGN (0x4)
 
-.ARM            0x0000000008003a74        0x0
-                0x0000000008003a74                . = ALIGN (0x4)
-                0x0000000008003a74                __exidx_start = .
+.ARM            0x0000000008003b14        0x0
+                0x0000000008003b14                . = ALIGN (0x4)
+                0x0000000008003b14                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008003a74                __exidx_end = .
-                0x0000000008003a74                . = ALIGN (0x4)
+                0x0000000008003b14                __exidx_end = .
+                0x0000000008003b14                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008003a74        0x0
-                0x0000000008003a74                . = ALIGN (0x4)
-                0x0000000008003a74                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008003b14        0x0
+                0x0000000008003b14                . = ALIGN (0x4)
+                0x0000000008003b14                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008003a74                PROVIDE (__preinit_array_end = .)
-                0x0000000008003a74                . = ALIGN (0x4)
+                0x0000000008003b14                PROVIDE (__preinit_array_end = .)
+                0x0000000008003b14                . = ALIGN (0x4)
 
-.init_array     0x0000000008003a74        0x4
-                0x0000000008003a74                . = ALIGN (0x4)
-                0x0000000008003a74                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008003b14        0x4
+                0x0000000008003b14                . = ALIGN (0x4)
+                0x0000000008003b14                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008003a74        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x0000000008003a78                PROVIDE (__init_array_end = .)
-                0x0000000008003a78                . = ALIGN (0x4)
+ .init_array    0x0000000008003b14        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0000000008003b18                PROVIDE (__init_array_end = .)
+                0x0000000008003b18                . = ALIGN (0x4)
 
-.fini_array     0x0000000008003a78        0x4
-                0x0000000008003a78                . = ALIGN (0x4)
+.fini_array     0x0000000008003b18        0x4
+                0x0000000008003b18                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003a78        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000008003b18        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008003a7c                . = ALIGN (0x4)
-                0x0000000008003a7c                _sidata = LOADADDR (.data)
+                0x0000000008003b1c                . = ALIGN (0x4)
+                0x0000000008003b1c                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x28 load address 0x0000000008003a7c
+.data           0x0000000020000000       0x28 load address 0x0000000008003b1c
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -2631,11 +2633,11 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000020000028                . = ALIGN (0x4)
                 0x0000000020000028                _edata = .
 
-.igot.plt       0x0000000020000028        0x0 load address 0x0000000008003aa4
+.igot.plt       0x0000000020000028        0x0 load address 0x0000000008003b44
  .igot.plt      0x0000000020000028        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x0000000020000028                . = ALIGN (0x4)
 
-.bss            0x0000000020000028     0x1274 load address 0x0000000008003aa4
+.bss            0x0000000020000028     0x1274 load address 0x0000000008003b44
                 0x0000000020000028                _sbss = .
                 0x0000000020000028                __bss_start__ = _sbss
  *(.bss)
@@ -2661,7 +2663,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x000000002000129c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000129c      0x604 load address 0x0000000008003aa4
+                0x000000002000129c      0x604 load address 0x0000000008003b44
                 0x00000000200012a0                . = ALIGN (0x8)
  *fill*         0x000000002000129c        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -2927,30 +2929,30 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x000000000000d87a       0x84 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
  .debug_macro   0x000000000000d8fe       0x84 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
 
-.debug_line     0x0000000000000000     0x75ed
- .debug_line    0x0000000000000000      0x4a0 ./Src/main.o
- .debug_line    0x00000000000004a0       0x84 ./Startup/startup_stm32f401retx.o
- .debug_line    0x0000000000000524      0x4a0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
- .debug_line    0x00000000000009c4      0x684 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
- .debug_line    0x0000000000001048      0x5cd C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
- .debug_line    0x0000000000001615      0x4c6 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_box.o)
- .debug_line    0x0000000000001adb      0x420 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
- .debug_line    0x0000000000001efb      0x521 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_default_cb.o)
- .debug_line    0x000000000000241c      0x512 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
- .debug_line    0x000000000000292e      0x48a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
- .debug_line    0x0000000000002db8      0x403 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
- .debug_line    0x00000000000031bb      0x971 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
- .debug_line    0x0000000000003b2c      0x55c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_init.o)
- .debug_line    0x0000000000004088      0x498 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
- .debug_line    0x0000000000004520      0x400 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel.o)
- .debug_line    0x0000000000004920      0x3e1 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
- .debug_line    0x0000000000004d01      0x5d4 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
- .debug_line    0x00000000000052d5      0x532 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
- .debug_line    0x0000000000005807      0x46f C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(utilities.o)
- .debug_line    0x0000000000005c76      0x65e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_gpio.o)
- .debug_line    0x00000000000062d4      0x8d2 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_rcc.o)
- .debug_line    0x0000000000006ba6      0x4c1 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
- .debug_line    0x0000000000007067      0x586 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
+.debug_line     0x0000000000000000     0x75eb
+ .debug_line    0x0000000000000000      0x49e ./Src/main.o
+ .debug_line    0x000000000000049e       0x84 ./Startup/startup_stm32f401retx.o
+ .debug_line    0x0000000000000522      0x4a0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(system_stm32f4xx.o)
+ .debug_line    0x00000000000009c2      0x684 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(timer.o)
+ .debug_line    0x0000000000001046      0x5cd C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(Ucglib.o)
+ .debug_line    0x0000000000001613      0x4c6 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_box.o)
+ .debug_line    0x0000000000001ad9      0x420 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_ccs.o)
+ .debug_line    0x0000000000001ef9      0x521 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_default_cb.o)
+ .debug_line    0x000000000000241a      0x512 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_ic_st7735.o)
+ .debug_line    0x000000000000292c      0x48a C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_msg_api.o)
+ .debug_line    0x0000000000002db6      0x403 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+ .debug_line    0x00000000000031b9      0x971 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_font.o)
+ .debug_line    0x0000000000003b2a      0x55c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_init.o)
+ .debug_line    0x0000000000004086      0x498 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
+ .debug_line    0x000000000000451e      0x400 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel.o)
+ .debug_line    0x000000000000491e      0x3e1 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
+ .debug_line    0x0000000000004cff      0x5d4 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
+ .debug_line    0x00000000000052d3      0x532 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
+ .debug_line    0x0000000000005805      0x46f C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(utilities.o)
+ .debug_line    0x0000000000005c74      0x65e C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_gpio.o)
+ .debug_line    0x00000000000062d2      0x8d2 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(stm32f401re_rcc.o)
+ .debug_line    0x0000000000006ba4      0x4c1 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_clip.o)
+ .debug_line    0x0000000000007065      0x586 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_com_msg_api.o)
 
 .debug_str      0x0000000000000000    0x45a86
  .debug_str     0x0000000000000000     0x99fa ./Src/main.o

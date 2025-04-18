@@ -12,10 +12,14 @@ int main(void)
 
     Ucglib4WireSWSPI_begin(&ucg, UCG_FONT_MODE_SOLID);
     ucg_ClearScreen(&ucg);
-    ucg_SetFont(&ucg, ucg_font_courB08_tf);
-    ucg_SetColor(&ucg, 0, 0, 255, 0);
+
+    ucg_SetFont(&ucg, ucg_font_ncenB10_tr);
+    ucg_SetColor(&ucg, 1, 0, 0, 0);
+    ucg_SetColor(&ucg, 0, 255, 255, 255);
     ucg_SetRotate180(&ucg);
-    ucg_DrawString (&ucg, 64, 71, 0, "Nhom4_TTCS");
+    ucg_DrawString (&ucg, 0, 11, 0, "Nhom4_TTCS");
+    ucg_DrawString (&ucg, 0, 26, 0, "Xin chao");
+    ucg_DrawString (&ucg, 0, 41, 0, "Programming");
 
     while(1)
     {
