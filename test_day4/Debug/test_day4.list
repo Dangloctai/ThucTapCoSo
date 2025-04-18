@@ -7,23 +7,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         0000300c  08000194  08000194  00010194  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000974  080031a0  080031a0  000131a0  2**2
+  2 .rodata       00000dec  080031a0  080031a0  000131a0  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  08003b14  08003b14  00020028  2**0
+  3 .ARM.extab    00000000  08003f8c  08003f8c  00020028  2**0
                   CONTENTS
-  4 .ARM          00000000  08003b14  08003b14  00020028  2**0
+  4 .ARM          00000000  08003f8c  08003f8c  00020028  2**0
                   CONTENTS
-  5 .preinit_array 00000000  08003b14  08003b14  00020028  2**0
+  5 .preinit_array 00000000  08003f8c  08003f8c  00020028  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000004  08003b14  08003b14  00013b14  2**2
+  6 .init_array   00000004  08003f8c  08003f8c  00013f8c  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .fini_array   00000004  08003b18  08003b18  00013b18  2**2
+  7 .fini_array   00000004  08003f90  08003f90  00013f90  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         00000028  20000000  08003b1c  00020000  2**2
+  8 .data         00000028  20000000  08003f94  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          00001274  20000028  08003b44  00020028  2**2
+  9 .bss          00001274  20000028  08003fbc  00020028  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  2000129c  08003b44  0002129c  2**0
+ 10 ._user_heap_stack 00000604  2000129c  08003fbc  0002129c  2**0
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00020028  2**0
                   CONTENTS, READONLY
@@ -98,7 +98,7 @@ int main(void)
     ucg_ClearScreen(&ucg);
  80001ea:	480e      	ldr	r0, [pc, #56]	; (8000224 <main+0x50>)
  80001ec:	f000 fd15 	bl	8000c1a <ucg_ClearScreen>
-    ucg_SetFont(&ucg, ucg_font_courB08_tf);
+    ucg_SetFont(&ucg, ucg_font_courB12_tf);
  80001f0:	490d      	ldr	r1, [pc, #52]	; (8000228 <main+0x54>)
  80001f2:	480c      	ldr	r0, [pc, #48]	; (8000224 <main+0x50>)
  80001f4:	f001 fe2a 	bl	8001e4c <ucg_SetFont>
@@ -113,12 +113,12 @@ int main(void)
     ucg_SetRotate180(&ucg);
  8000208:	4806      	ldr	r0, [pc, #24]	; (8000224 <main+0x50>)
  800020a:	f001 fff9 	bl	8002200 <ucg_SetRotate180>
-    ucg_DrawString (&ucg, 64, 71, 0, "Nhom4_TTCS");
+    ucg_DrawString (&ucg, 28, 70, 0, "Nhom4_TTCS");
  800020e:	4b07      	ldr	r3, [pc, #28]	; (800022c <main+0x58>)
  8000210:	9300      	str	r3, [sp, #0]
  8000212:	2300      	movs	r3, #0
- 8000214:	2247      	movs	r2, #71	; 0x47
- 8000216:	2140      	movs	r1, #64	; 0x40
+ 8000214:	2246      	movs	r2, #70	; 0x46
+ 8000216:	211c      	movs	r1, #28
  8000218:	4802      	ldr	r0, [pc, #8]	; (8000224 <main+0x50>)
  800021a:	f001 fd53 	bl	8001cc4 <ucg_DrawString>
 
@@ -222,7 +222,7 @@ LoopForever:
   ldr r1, =_edata
  8000270:	20000028 	.word	0x20000028
   ldr r2, =_sidata
- 8000274:	08003b1c 	.word	0x08003b1c
+ 8000274:	08003f94 	.word	0x08003f94
   ldr r2, =_sbss
  8000278:	20000028 	.word	0x20000028
   ldr r4, =_ebss
@@ -5665,10 +5665,10 @@ Infinite_Loop:
  8003172:	4798      	blx	r3
  8003174:	3601      	adds	r6, #1
  8003176:	e7f2      	b.n	800315e <__libc_init_array+0x1e>
- 8003178:	08003b14 	.word	0x08003b14
- 800317c:	08003b14 	.word	0x08003b14
- 8003180:	08003b14 	.word	0x08003b14
- 8003184:	08003b18 	.word	0x08003b18
+ 8003178:	08003f8c 	.word	0x08003f8c
+ 800317c:	08003f8c 	.word	0x08003f8c
+ 8003180:	08003f8c 	.word	0x08003f8c
+ 8003184:	08003f90 	.word	0x08003f90
 
 08003188 <_init>:
  8003188:	b5f8      	push	{r3, r4, r5, r6, r7, lr}

@@ -29,7 +29,7 @@ C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_line.o)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel.o)
                               ./Src/main.o (ucg_SetColor)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
-                              ./Src/main.o (ucg_font_courB08_tf)
+                              ./Src/main.o (ucg_font_courB12_tf)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_rotate.o)
                               ./Src/main.o (ucg_SetRotate180)
 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(buff.o)
@@ -1058,6 +1058,8 @@ Discarded input sections
                 0x0000000000000000      0xacb C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB08_mr
                 0x0000000000000000      0x4da C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
+ .rodata.ucg_font_courB08_tf
+                0x0000000000000000      0x877 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB08_tr
                 0x0000000000000000      0x3da C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB10_mf
@@ -1072,8 +1074,6 @@ Discarded input sections
                 0x0000000000000000      0xf71 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB12_mr
                 0x0000000000000000      0x6d4 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
- .rodata.ucg_font_courB12_tf
-                0x0000000000000000      0xcf0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB12_tr
                 0x0000000000000000      0x602 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
  .rodata.ucg_font_courB14_mf
@@ -2533,7 +2533,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 .iplt           0x00000000080031a0        0x0
  .iplt          0x00000000080031a0        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x00000000080031a0      0x974
+.rodata         0x00000000080031a0      0xdec
                 0x00000000080031a0                . = ALIGN (0x4)
  *(.rodata)
  .rodata        0x00000000080031a0        0xb ./Src/main.o
@@ -2565,54 +2565,53 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  *fill*         0x000000000800326f        0x1 
  .rodata.ucg_tft_128x160_st7735_init_seq
                 0x0000000008003270       0x2c C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
- .rodata.ucg_font_courB08_tf
-                0x000000000800329c      0x877 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
-                0x000000000800329c                ucg_font_courB08_tf
-                0x0000000008003b14                . = ALIGN (0x4)
- *fill*         0x0000000008003b13        0x1 
+ .rodata.ucg_font_courB12_tf
+                0x000000000800329c      0xcf0 C:\Users\PC\Downloads\SDK_1.0.3_NUCLEO-F401RE\lib_stm\libLibraries.a(ucg_pixel_font_data.o)
+                0x000000000800329c                ucg_font_courB12_tf
+                0x0000000008003f8c                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008003b14        0x0
- .rel.iplt      0x0000000008003b14        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0000000008003f8c        0x0
+ .rel.iplt      0x0000000008003f8c        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ARM.extab      0x0000000008003b14        0x0
-                0x0000000008003b14                . = ALIGN (0x4)
+.ARM.extab      0x0000000008003f8c        0x0
+                0x0000000008003f8c                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008003b14                . = ALIGN (0x4)
+                0x0000000008003f8c                . = ALIGN (0x4)
 
-.ARM            0x0000000008003b14        0x0
-                0x0000000008003b14                . = ALIGN (0x4)
-                0x0000000008003b14                __exidx_start = .
+.ARM            0x0000000008003f8c        0x0
+                0x0000000008003f8c                . = ALIGN (0x4)
+                0x0000000008003f8c                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008003b14                __exidx_end = .
-                0x0000000008003b14                . = ALIGN (0x4)
+                0x0000000008003f8c                __exidx_end = .
+                0x0000000008003f8c                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008003b14        0x0
-                0x0000000008003b14                . = ALIGN (0x4)
-                0x0000000008003b14                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008003f8c        0x0
+                0x0000000008003f8c                . = ALIGN (0x4)
+                0x0000000008003f8c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008003b14                PROVIDE (__preinit_array_end = .)
-                0x0000000008003b14                . = ALIGN (0x4)
+                0x0000000008003f8c                PROVIDE (__preinit_array_end = .)
+                0x0000000008003f8c                . = ALIGN (0x4)
 
-.init_array     0x0000000008003b14        0x4
-                0x0000000008003b14                . = ALIGN (0x4)
-                0x0000000008003b14                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008003f8c        0x4
+                0x0000000008003f8c                . = ALIGN (0x4)
+                0x0000000008003f8c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008003b14        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x0000000008003b18                PROVIDE (__init_array_end = .)
-                0x0000000008003b18                . = ALIGN (0x4)
+ .init_array    0x0000000008003f8c        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0000000008003f90                PROVIDE (__init_array_end = .)
+                0x0000000008003f90                . = ALIGN (0x4)
 
-.fini_array     0x0000000008003b18        0x4
-                0x0000000008003b18                . = ALIGN (0x4)
+.fini_array     0x0000000008003f90        0x4
+                0x0000000008003f90                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003b18        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000008003f90        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008003b1c                . = ALIGN (0x4)
-                0x0000000008003b1c                _sidata = LOADADDR (.data)
+                0x0000000008003f94                . = ALIGN (0x4)
+                0x0000000008003f94                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x28 load address 0x0000000008003b1c
+.data           0x0000000020000000       0x28 load address 0x0000000008003f94
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -2633,11 +2632,11 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000020000028                . = ALIGN (0x4)
                 0x0000000020000028                _edata = .
 
-.igot.plt       0x0000000020000028        0x0 load address 0x0000000008003b44
+.igot.plt       0x0000000020000028        0x0 load address 0x0000000008003fbc
  .igot.plt      0x0000000020000028        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x0000000020000028                . = ALIGN (0x4)
 
-.bss            0x0000000020000028     0x1274 load address 0x0000000008003b44
+.bss            0x0000000020000028     0x1274 load address 0x0000000008003fbc
                 0x0000000020000028                _sbss = .
                 0x0000000020000028                __bss_start__ = _sbss
  *(.bss)
@@ -2663,7 +2662,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x000000002000129c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000129c      0x604 load address 0x0000000008003b44
+                0x000000002000129c      0x604 load address 0x0000000008003fbc
                 0x00000000200012a0                . = ALIGN (0x8)
  *fill*         0x000000002000129c        0x4 
                 [!provide]                        PROVIDE (end = .)
