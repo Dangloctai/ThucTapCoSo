@@ -1,6 +1,7 @@
-15:36:54 **** Incremental Build of configuration Debug for project day3 ****
+22:41:21 **** Incremental Build of configuration Debug for project day3 ****
 Info: Internal Builder is used for build
-gcc -o day3.exe Bai1.o math.o 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Phan3_Structure\\BT4.o" "..\\Phan3_Structure\\BT4.c" 
+gcc -o day3.exe "Phan3_Structure\\BT4.o" 
 
-15:36:55 Build Finished. 0 errors, 0 warnings. (took 260ms)
+22:41:22 Build Finished. 0 errors, 0 warnings. (took 1s.20ms)
 

@@ -1,7 +1,7 @@
-23:44:42 **** Incremental Build of configuration Debug for project day2 ****
+17:07:26 **** Rebuild of configuration Debug for project day2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Bai10.o "..\\Bai10.c" 
 gcc -o day2.exe Bai10.o 
 
-23:44:43 Build Finished. 0 errors, 0 warnings. (took 1s.17ms)
+17:07:26 Build Finished. 0 errors, 0 warnings. (took 522ms)
 

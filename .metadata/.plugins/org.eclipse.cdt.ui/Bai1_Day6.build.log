@@ -1,0 +1,10 @@
+15:40:43 **** Incremental Build of configuration Debug for project Bai1_Day6 ****
+make -j4 all 
+arm-none-eabi-size   Bai1_Day6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    772	      8	   1568	   2348	    92c	Bai1_Day6.elf
+Finished building: default.size.stdout
+ 
+
+15:40:44 Build Finished. 0 errors, 0 warnings. (took 347ms)
+

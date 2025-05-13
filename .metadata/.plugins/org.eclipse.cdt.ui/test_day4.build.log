@@ -1,14 +1,10 @@
-15:25:11 **** Incremental Build of configuration Debug for project test_day4 ****
+17:07:27 **** Incremental Build of configuration Debug for project test_day4 ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/CMSIS/Include" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/STM32F401RE_StdPeriph_Driver/inc" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/button" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/buzzer" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/led" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/rtos" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/sensor" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/serial" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/ucglib" -I"C:/Users/PC/Downloads/SDK_1.0.3_NUCLEO-F401RE/shared/Utilities" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:15:23: error: 'ucg_font_courB6_tf' undeclared (first use in this function); did you mean 'ucg_font_courB24_tf'?
-   15 |     ucg_SetFont(&ucg, ucg_font_courB6_tf);
-      |                       ^~~~~~~~~~~~~~~~~~
-      |                       ucg_font_courB24_tf
-../Src/main.c:15:23: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-size   test_day4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16268	     48	   6264	  22580	   5834	test_day4.elf
+Finished building: default.size.stdout
+ 
 
-15:25:12 Build Failed. 2 errors, 0 warnings. (took 453ms)
+17:07:28 Build Finished. 0 errors, 0 warnings. (took 1s.71ms)
 
