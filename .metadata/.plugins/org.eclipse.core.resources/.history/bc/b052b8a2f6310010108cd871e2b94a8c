@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <stm32f401re.h>
+#include <stm32f401re_rcc.h>
+#include <stm32f401re_gpio.h>
+#include <led.h>
+
+//#define BUTTON_PRESS 0
+//#define BUTTON_RELEASE 1
+//
+////Define LED
+//#define LED_GPIO_PORT    GPIOA
+//#define LED_GPIO_PIN     GPIO_Pin_0
+//#define LED_GPIO_CLOCK_EN    RCC_AHB1Periph_GPIOA
+//
+////Define Button
+//#define BUZZER_GPIO_PORT   GPIOC
+//#define BUZZER_GPIO_PIN    GPIO_Pin_9
+//#define BUZZER_GPIO_CLOCK_EN   RCC_AHB1Periph_GPIOC
+//
+////Define Button
+//#define BUTTON_GPIO_PORT   GPIOB
+//#define BUTTON_GPIO_PIN    GPIO_Pin_3
+//#define BUTTON_GPIO_CLOCK_EN   RCC_AHB1Periph_GPIOB
+
+static void ButtonB3_Init(void);
+
+int main() {
+	SystemCoreClockUpdate();
+	LedControl_Init();
+	ButtonB3_Init();
+
+	while(1){
+		if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4) == 0){
+			LedControl_SetColorIndividual(LED_KIT_ID1, LED_COLOR_RED, 100);
+		}
+		else{
+			LedControl_SetColorIndividual(LED_KIT_ID1, LED_COLOR_RED, 0);
+		}
+	}
+
+    return 0;
+}
+
+static void ButtonB3_Init(void){
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+
+	GPIO_Init(GPIOB, &GPIO_InitStructure);
+}
